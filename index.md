@@ -5,235 +5,350 @@ layout: null
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Shahar | Academic Portfolio</title>
-  <style>
-    * { box-sizing: border-box; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahar | Membrane Protein Research</title>
 
-    html { scroll-behavior: smooth; }
+<style>
+* { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f6fc;
-      color: #25304a;
-      line-height: 1.7;
-    }
+html { scroll-behavior: smooth; }
 
-    nav {
-      background: #111a30;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f8f7;
+  color: #263b3d;
+  line-height: 1.7;
+}
 
-    nav strong { color: white; font-size: 20px; }
+nav {
+  background: #103c42;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    nav a {
-      color: #c8c9f5;
-      margin-left: 18px;
-      text-decoration: none;
-    }
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    nav a:hover { color: white; }
+nav a {
+  color: #d1e9e5;
+  text-decoration: none;
+  margin-left: 18px;
+}
 
-    header {
-      background: linear-gradient(135deg,
-        #111a30, #46318c, #7560c9);
-      color: white;
-      text-align: center;
-      padding: 95px 20px;
-    }
+nav a:hover { color: #71e2cd; }
 
-    header h1 {
-      font-size: clamp(36px, 6vw, 58px);
-      margin: 0 0 12px;
-    }
+.hero {
+  background: linear-gradient(135deg, #103c42, #176b68);
+  color: white;
+  padding: 95px 8%;
+  text-align: center;
+}
 
-    header p {
-      font-size: 20px;
-      color: #e0dcff;
-    }
+.hero h1 {
+  font-size: clamp(34px, 6vw, 58px);
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
 
-    .button {
-      display: inline-block;
-      background: #8066e9;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 9px;
-      text-decoration: none;
-      margin: 10px 5px;
-      font-weight: bold;
-    }
+.hero p {
+  max-width: 760px;
+  margin: 15px auto;
+  color: #d2eae5;
+  font-size: 19px;
+}
 
-    .button:hover { background: #6247cc; }
+.label {
+  color: #90ead9;
+  letter-spacing: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
 
-    .container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 55px 22px;
-    }
+.button {
+  display: inline-block;
+  background: #12a58f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+  margin: 12px 5px;
+  font-weight: bold;
+}
 
-    h2 {
-      color: #302369;
-      font-size: 30px;
-      margin-bottom: 22px;
-    }
+.button:hover { background: #087e70; }
 
-    .grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 22px;
+}
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 6px 24px #18214a12;
-      border: 1px solid #e9e7f5;
-    }
+h2 {
+  color: #125b59;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
 
-    .card h3 {
-      color: #6247bd;
-      margin-top: 0;
-    }
+.subtitle {
+  color: #647b7d;
+  margin-bottom: 28px;
+}
 
-    .tag {
-      display: inline-block;
-      background: #eae5ff;
-      color: #5039a1;
-      border-radius: 20px;
-      padding: 5px 13px;
-      margin: 5px;
-      font-size: 14px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
 
-    footer {
-      background: #111a30;
-      color: #cbd0e5;
-      text-align: center;
-      padding: 30px;
-    }
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #dcebe7;
+  box-shadow: 0 5px 18px #123e3e0c;
+}
 
-    footer a { color: #bbaaff; }
-  </style>
+.card h3 {
+  color: #11796f;
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 7px 13px;
+  margin: 5px;
+  background: #dcefeb;
+  color: #17665f;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.highlight {
+  background: #e1f1ed;
+  border-left: 5px solid #16a28c;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #103c42;
+  color: #d2e6e2;
+  text-align: center;
+  padding: 35px;
+}
+
+footer a { color: #9ee9d9; }
+
+@media (max-width: 600px) {
+  nav a { margin: 0 10px 0 0; }
+  .hero { padding: 65px 20px; }
+}
+</style>
 </head>
 
 <body>
 
 <nav>
-  <strong>Shahar.</strong>
+  <div class="logo">SHAHAR | RESEARCH</div>
   <div>
     <a href="#about">About</a>
     <a href="#research">Research</a>
+    <a href="#methods">Methods</a>
     <a href="#python">Python</a>
-    <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<header>
-  <h1>Hello, I'm Shahar 👋</h1>
-  <p>Science | Research | Data Analysis</p>
-  <p>Welcome to my academic portfolio</p>
-  <a class="button" href="#about">Explore My Work</a>
-  <a class="button"
-     href="https://github.com/shalu13lyu">
-    My GitHub ↗
+<header class="hero">
+  <p class="label">Membrane Protein Research</p>
+
+  <h1>Exploring Membrane Proteins<br>
+      at the Nanoscale</h1>
+
+  <p>
+    Investigating membrane proteins using
+    Electron Microscopy (EM) and
+    Atomic Force Microscopy (AFM).
+  </p>
+
+  <p>
+    Connecting experimental imaging
+    with computational data analysis.
+  </p>
+
+  <a class="button" href="#research">
+    Explore My Research
   </a>
 </header>
 
 <main>
-  <section class="container" id="about">
-    <h2>✨ About Me</h2>
+
+<section class="container" id="about">
+  <h2>About Me</h2>
+
+  <div class="card">
+    <p>
+      Hello! I'm Shahar, and my research
+      focuses on membrane proteins.
+    </p>
+
+    <p>
+      In our laboratory, we use microscopy
+      techniques to investigate membrane
+      proteins and their structural properties.
+    </p>
+
+    <p>
+      I am also developing programming
+      skills to support our research
+      and analyze experimental data.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="research">
+  <h2>My Research</h2>
+
+  <p class="subtitle">
+    Understanding biological membranes
+    through advanced imaging methods.
+  </p>
+
+  <div class="highlight">
+    <h3>Why Membrane Proteins?</h3>
+    <p>
+      Membrane proteins play essential roles
+      in cellular communication, transport,
+      and many biological processes.
+    </p>
+
+    <p>
+      Studying their structures and
+      properties can help us understand
+      how they function in biological systems.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="methods">
+  <h2>Research Techniques</h2>
+
+  <div class="grid">
+
     <div class="card">
+      <h3>Electron Microscopy (EM)</h3>
       <p>
-        Hello! I'm Shahar, currently studying
-        [your degree] at [your institution].
+        Electron microscopy is a powerful
+        technique for studying biological
+        structures at very small scales.
       </p>
       <p>
-        My academic interests include scientific
-        research, data analysis, and developing
-        new computational skills.
+        We use EM as part of our research
+        into membrane proteins.
       </p>
     </div>
-  </section>
 
-  <section class="container" id="research">
-    <h2>🔬 Research & Academic Background</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>🎓 Education</h3>
-        <p>[Your degree and university]</p>
-        <p>[Your academic achievements]</p>
-      </div>
-
-      <div class="card">
-        <h3>🧪 My Research</h3>
-        <p>[Your lab or research group]</p>
-        <p>[Brief description of your research]</p>
-      </div>
-
-      <div class="card">
-        <h3>💡 Research Interests</h3>
-        <span class="tag">[Interest 1]</span>
-        <span class="tag">[Interest 2]</span>
-        <span class="tag">[Interest 3]</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="container" id="python">
-    <h2>💻 My Python Learning Journey</h2>
     <div class="card">
-      <h3>Python Course 2026</h3>
+      <h3>Atomic Force Microscopy (AFM)</h3>
       <p>
-        I am learning Python to improve my
-        programming, data analysis, and
-        scientific visualization skills.
+        AFM provides nanoscale information
+        about surfaces and molecular
+        structures.
       </p>
-      <p>My goals include:</p>
-      <ul>
-        <li>Learn Python fundamentals</li>
-        <li>Analyze and visualize data</li>
-        <li>Automate research tasks</li>
-        <li>Develop practical coding projects</li>
-      </ul>
+      <p>
+        It allows us to investigate
+        membrane-associated systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Computational Analysis</h3>
+      <p>
+        Programming helps us process,
+        analyze, and visualize
+        experimental measurements.
+      </p>
+      <p>
+        I am learning Python to develop
+        these skills for research.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="container" id="python">
+  <h2>Python for Scientific Research</h2>
+
+  <div class="card">
+    <h3>My Python Learning Journey</h3>
+
+    <p>
+      I am participating in the
+      Weizmann Python Course 2026.
+    </p>
+
+    <p>
+      My goal is to use programming
+      to support experimental research
+      in our laboratory.
+    </p>
+
+    <h3>My Learning Goals</h3>
+
+    <ul>
+      <li>Learn Python programming fundamentals</li>
+      <li>Analyze microscopy datasets</li>
+      <li>Visualize experimental measurements</li>
+      <li>Automate repetitive analysis tasks</li>
+      <li>Develop tools for research workflows</li>
+    </ul>
+
+    <div>
+      <span class="tag">Python</span>
+      <span class="tag">Microscopy</span>
+      <span class="tag">Data Analysis</span>
+      <span class="tag">Scientific Computing</span>
+    </div>
+
+    <p>
       <a class="button"
-         href="https://github.com/Code-Maven/wis-python-course-2026-10">
-        View Python Course ↗
+        href="https://github.com/Code-Maven/wis-python-course-2026-10">
+        Python Course
       </a>
-    </div>
-  </section>
 
-  <section class="container" id="contact">
-    <h2>📬 Connect With Me</h2>
-    <div class="card">
-      <p>
-        Explore my programming projects
-        and academic work on GitHub.
-      </p>
       <a class="button"
-         href="https://github.com/shalu13lyu">
-        Visit My GitHub ↗
+        href="https://github.com/shalu13lyu">
+        My GitHub
       </a>
-    </div>
-  </section>
+    </p>
+  </div>
+</section>
+
 </main>
 
 <footer>
-  <p>© 2026 Shahar | Academic Portfolio</p>
+  <p>Shahar | Membrane Protein Research</p>
   <p>
-    Built with GitHub Pages & Jekyll
+    Electron Microscopy · Atomic Force Microscopy
+    · Python
   </p>
+  <p>
+    <a href="https://github.com/shalu13lyu">
+      GitHub Profile
+    </a>
+  </p>
+  <p>© 2026 Shahar</p>
 </footer>
 
 </body>
 </html>
-
